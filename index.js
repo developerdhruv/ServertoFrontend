@@ -1,16 +1,23 @@
 const express = require('express');
 const app = express();
+const cors = require('cors')
+
+
 
 const port  = 9000
 
+
+app.use(cors())
+
+
 app.get('/api/users', (req,res)=>{
     data = [{
-        "name":"dhruv",
+        "name":"xyz",
         "age": 19
     },
 
     {
-        "name" : "kusum",        
+        "name" : "abc",        
         "age" : 30
     }
 
